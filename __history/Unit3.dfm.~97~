@@ -1,0 +1,283 @@
+object Form3: TForm3
+  Left = 470
+  Top = 166
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = #1042#1080#1079#1091#1072#1083#1080#1079#1072#1094#1080#1103' '#1088#1072#1073#1086#1090#1099' '#1089#1086' '#1089#1090#1077#1082#1086#1084
+  ClientHeight = 762
+  ClientWidth = 988
+  Color = clBtnFace
+  Font.Charset = EASTEUROPE_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'MS Reference Sans Serif'
+  Font.Style = [fsBold]
+  Position = poDesigned
+  OnActivate = FormActivate
+  TextHeight = 19
+  object label3: TLabel
+    Left = 245
+    Top = 393
+    Width = 257
+    Height = 19
+    Caption = #1041#1091#1092#1077#1088' '#1076#1086#1073#1072#1074#1083#1077#1085#1080#1103' '#1101#1083#1077#1084#1077#1085#1090#1086#1074
+  end
+  object label4: TLabel
+    Left = 247
+    Top = 299
+    Width = 62
+    Height = 19
+    Caption = #1043#1086#1083#1086#1074#1072
+    Visible = False
+  end
+  object Label5: TLabel
+    Left = 257
+    Top = 489
+    Width = 427
+    Height = 19
+    Caption = #1042#1074#1077#1076#1080#1090#1077' '#1101#1083#1077#1084#1077#1085#1090' '#1085#1080#1078#1077' '#1076#1083#1103' '#1087#1088#1086#1074#1077#1088#1082#1080' '#1077#1075#1086' '#1085#1072#1083#1080#1095#1080#1103
+  end
+  object Label6: TLabel
+    Left = 264
+    Top = 584
+    Width = 6
+    Height = 19
+  end
+  object TLabel
+    Left = 241
+    Top = 609
+    Width = 6
+    Height = 19
+  end
+  object Label7: TLabel
+    Left = 264
+    Top = 609
+    Width = 6
+    Height = 19
+  end
+  object Panel2: TPanel
+    Left = 198
+    Top = 0
+    Width = 805
+    Height = 113
+    ParentBackground = False
+    TabOrder = 10
+    object Label1: TLabel
+      Left = 232
+      Top = 40
+      Width = 279
+      Height = 19
+      Caption = #1042#1080#1079#1091#1072#1083#1080#1079#1072#1094#1080#1103' '#1088#1072#1073#1086#1090#1099' '#1089#1086' '#1089#1090#1077#1082#1086#1084
+    end
+    object Panel4: TPanel
+      Left = 548
+      Top = 3
+      Width = 238
+      Height = 101
+      BevelOuter = bvNone
+      ParentBackground = False
+      TabOrder = 1
+    end
+    object Button7: TButton
+      Left = 555
+      Top = 55
+      Width = 227
+      Height = 42
+      Caption = ' '#1050' '#1090#1077#1089#1090#1091
+      TabOrder = 0
+      OnClick = Button7Click
+    end
+  end
+  object Panel1: TPanel
+    Left = -4
+    Top = 0
+    Width = 206
+    Height = 806
+    Color = clBlue
+    ParentBackground = False
+    TabOrder = 9
+    object Label2: TLabel
+      Left = 7
+      Top = 272
+      Width = 195
+      Height = 19
+      Caption = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086' '#1101#1083#1077#1084#1077#1085#1090#1086#1074
+    end
+    object Image1: TImage
+      Left = 12
+      Top = 8
+      Width = 49
+      Height = 51
+      Picture.Data = {
+        0954506E67496D61676589504E470D0A1A0A0000000D49484452000000320000
+        003208060000001E3F88B1000000097048597300000B1300000B1301009A9C18
+        000001A04944415478DAED984F2B06511487CF2B121B59508A9285A5D88AA5C5
+        2B294A59B14516ACFDD9F00148F802AC48845EB2A0888F81A22C6C59497EA76B
+        6ABADE57F74EEA9CD1F9D5B398B33ACFCCBD67EE4C81FE490AD20D988889288F
+        89688B89688B89688B89684BACC830D806B5600AEC4B0B641129822350F37DFD
+        0A9AA40562457AC105A84FD55E408BB4408C4817B8028DA9DA2718077BD202A1
+        221DE0867EDEF939B02EDD7CA84833B8069D5E7D09AC4A371E2AD2406E39757B
+        F54D302BDD74A8086FE873D0E7D577C024B9FDA12EBE088F561EB145AF7E0C46
+        C18774C32122556097DC344AE7160C8077E9664345B6C0B4744391790033A094
+        88F0145A90EE2A639E416B22B20216A53BFA0B114E1E97D63DB9A57516B2D9EF
+        C86DF637E9AE7F4BB9F17B0806BDFA0918A19C8CDF2475E45E88FD5E9D9FD604
+        E5E48598848F2897A0C7ABE7EA8892A4D2A17199DC945395ACC7F879B026DD7C
+        8C08A7D287D5183890168811E194FBD47D04EDD202B1221CFFE7C313689316C8
+        22C219021BA09ADCEFA0536981AC226A6322DA6222DA6222DA6222DA6222DA62
+        22DAF20566213A3315DCE9C30000000049454E44AE426082}
+      OnClick = Image1Click
+    end
+    object Panel3: TPanel
+      Left = 7
+      Top = 333
+      Width = 188
+      Height = 289
+      BevelOuter = bvNone
+      ParentBackground = False
+      TabOrder = 0
+    end
+  end
+  object StringGrid1: TStringGrid
+    Left = 252
+    Top = 324
+    Width = 57
+    Height = 55
+    BorderStyle = bsNone
+    Color = clHotLight
+    ColCount = 1
+    DefaultColWidth = 55
+    DefaultColAlignment = taCenter
+    DefaultRowHeight = 55
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goFixedRowDefAlign]
+    ScrollBars = ssNone
+    TabOrder = 0
+    OnSetEditText = StringGrid1SetEditText
+  end
+  object Edit1: TEdit
+    Left = 8
+    Top = 297
+    Width = 65
+    Height = 27
+    TabOrder = 1
+    Text = '1'
+    OnChange = Edit1Change
+  end
+  object StringGrid2: TStringGrid
+    Left = 252
+    Top = 418
+    Width = 224
+    Height = 55
+    BorderStyle = bsNone
+    ColCount = 4
+    DefaultColWidth = 55
+    DefaultColAlignment = taCenter
+    DefaultRowHeight = 55
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goFixedRowDefAlign]
+    ScrollBars = ssNone
+    TabOrder = 4
+  end
+  object Button5: TButton
+    Left = 754
+    Top = 8
+    Width = 226
+    Height = 41
+    Caption = #1050' '#1074#1080#1079#1091#1072#1083#1080#1079#1072#1094#1080#1080' '#1086#1095#1077#1088#1077#1076#1080
+    TabOrder = 7
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Left = 863
+    Top = 719
+    Width = 121
+    Height = 41
+    Caption = #1057#1087#1088#1072#1074#1086#1095#1085#1080#1082
+    TabOrder = 8
+    OnClick = Button6Click
+  end
+  object StringGrid3: TStringGrid
+    Left = 443
+    Top = 514
+    Width = 57
+    Height = 55
+    BorderStyle = bsNone
+    Color = clHotLight
+    ColCount = 1
+    DefaultColWidth = 55
+    DefaultColAlignment = taCenter
+    DefaultRowHeight = 55
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goFixedRowDefAlign]
+    ScrollBars = ssNone
+    TabOrder = 12
+    OnSetEditText = StringGrid1SetEditText
+  end
+  object Button8: TButton
+    Left = 8
+    Top = 527
+    Width = 177
+    Height = 42
+    Caption = #1053#1072#1083#1080#1095#1080#1077' '#1101#1083#1077#1084#1077#1085#1090#1072
+    TabOrder = 11
+    OnClick = Button8Click
+  end
+  object Button4: TButton
+    Left = 8
+    Top = 479
+    Width = 177
+    Height = 42
+    Caption = #1054#1095#1080#1089#1090#1080#1090#1100' '#1089#1090#1077#1082
+    TabOrder = 6
+    OnClick = Button4Click
+  end
+  object Button3: TButton
+    Left = 8
+    Top = 431
+    Width = 177
+    Height = 42
+    Caption = #1059#1076#1072#1083#1080#1090#1100' '#1101#1083#1077#1084#1077#1085#1090
+    TabOrder = 5
+    OnClick = Button3Click
+  end
+  object Button2: TButton
+    Left = 8
+    Top = 385
+    Width = 177
+    Height = 40
+    Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1101#1083#1077#1084#1077#1085#1090#1099
+    TabOrder = 3
+    OnClick = Button2Click
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 338
+    Width = 177
+    Height = 41
+    Caption = #1047#1072#1087#1086#1083#1085#1080#1090#1100' '#1089#1090#1077#1082
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Button9: TButton
+    Left = 8
+    Top = 575
+    Width = 177
+    Height = 40
+    Caption = #1055#1086#1089#1083#1077#1076#1085#1080#1081' '#1101#1083#1077#1084#1077#1085#1090
+    DisabledImageName = 'Button9'
+    TabOrder = 13
+    OnClick = Button9Click
+  end
+  object Timer1: TTimer
+    Interval = 2000
+    OnTimer = Timer1Timer
+    Left = 680
+    Top = 296
+  end
+end

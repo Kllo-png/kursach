@@ -1,0 +1,100 @@
+unit Unit5;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage, Vcl.ComCtrls;
+
+type
+  TForm5 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Image5: TImage;
+    Label5: TLabel;
+    Image6: TImage;
+    Label6: TLabel;
+    Label7: TLabel;
+    Image7: TImage;
+    Image8: TImage;
+    Memo1: TMemo;
+    Memo2: TMemo;
+    Memo3: TMemo;
+    Memo4: TMemo;
+    TabControl1: TTabControl;
+    procedure FormActivate(Sender: TObject);
+    procedure Image5Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  public
+  f:text; s:string;
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm} uses unit3,unit4,unit6;
+
+procedure TForm5.FormActivate(Sender: TObject);
+begin
+form5.Color:=rgb(77,131,201);
+label1.Caption:='Пример объявление очереди в ЯП PascalABC'+#13#10+'и его последующее заполнение 10 числами до 10';
+label2.Caption:='Та же объявленная очередь, но мы убрали 1 элемент и'+#13#10+'вывели результат работы программы';
+label3.Caption:='В объявленную очередь мы добавили элемент -100 и'+#13#10+'и вывели результат работы программы';
+label4.Caption:='Данный объявленную очередь мы очистили от элементов'+#13#10+'и вывели результат работы программы';
+label5.Caption:='Результат работы программы';
+label6.Caption:='Результат работы программы';
+label7.Caption:='Результат работы программы';
+assignfile(f,'D:\Delphi\Projects\Kursach\Win32\Queue_spravka.txt');
+reset(f);
+while not eof(f) do
+begin
+  readln(f,s);
+  if (s[1]='*') then
+  begin
+      delete(s,1,1);
+  memo1.Lines.Add(s)
+  end
+  else if (s[1]='-') then
+  begin
+      delete(s,1,1);
+    memo2.Lines.Add(s);
+  end
+  else if (s[1]='+') then
+  begin
+      delete(s,1,1);
+    memo3.Lines.Add(s);
+  end
+  else if (s[1]='%') then
+  begin
+      delete(s,1,1);
+    memo4.Lines.Add(s);
+  end;
+end;
+closefile(f);
+
+end;
+
+procedure TForm5.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+memo1.Clear;
+memo2.Clear;
+memo3.Clear;
+memo4.clear
+end;
+
+procedure TForm5.Image5Click(Sender: TObject);
+begin
+form5.Close;
+form4.show;
+end;
+
+
+
+end.

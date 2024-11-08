@@ -1,0 +1,39 @@
+unit Unit6;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage;
+
+type
+  TForm6 = class(TForm)
+    Label1: TLabel;
+    Image1: TImage;
+    Label2: TLabel;
+    Image2: TImage;
+    Label3: TLabel;
+    Image3: TImage;
+    Label4: TLabel;
+    Image4: TImage;
+    procedure FormActivate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm6.FormActivate(Sender: TObject);
+begin
+label1.Caption:='ѕример объ€вление стека в яѕ PascalABC'+#13#10+'и его последующее заполнение 10 случайными числами'
+end;
+
+end.

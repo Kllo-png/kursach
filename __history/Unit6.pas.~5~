@@ -1,0 +1,59 @@
+unit Unit6;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage;
+
+type
+  TForm6 = class(TForm)
+    Label1: TLabel;
+    Image1: TImage;
+    Label2: TLabel;
+    Image2: TImage;
+    Label3: TLabel;
+    Image3: TImage;
+    Label4: TLabel;
+    Image4: TImage;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Image6: TImage;
+    Image7: TImage;
+    Image8: TImage;
+    Image5: TImage;
+    procedure FormActivate(Sender: TObject);
+    procedure Image5Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+
+implementation
+
+{$R *.dfm} uses math, Unit4,unit1, Unit5, unit3;
+
+procedure TForm6.FormActivate(Sender: TObject);
+begin
+label1.Caption:='Пример объявление стека в ЯП PascalABC'+#13#10+'и его последующее заполнение 10 числами до 10';
+label2.Caption:='Тот же объявленный стек, но мы убрали 1 элемент и'+#13#10+'вывели результат работы программы';
+label3.Caption:='В объявленный стек мы добавили элемент -100 и'+#13#10+'и вывели результат работы программы';
+label4.Caption:='Данный объявленный стек мы очистили от элементов'+#13#10+'и вывели результат работы программы';
+label6.Caption:='Результат работы программы';
+label7.Caption:='Результат работы программы';
+label8.Caption:='Результат работы программы';
+end;
+
+procedure TForm6.Image5Click(Sender: TObject);
+begin
+form6.Close;
+form3.Show;
+end;
+
+end.
